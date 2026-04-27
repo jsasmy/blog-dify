@@ -1,0 +1,344 @@
+/* Last-loaded clean editor skin. */
+.picdoc-editor-form {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0 !important;
+  max-width: 1080px !important;
+  min-height: 0 !important;
+  margin: 24px auto 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.picdoc-editor-form::before,
+.picdoc-editor-form::after,
+.picdoc-field::after {
+  content: none !important;
+}
+
+.picdoc-body-section {
+  position: relative !important;
+  grid-column: 1 / -1 !important;
+  display: grid !important;
+  gap: 12px !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  width: 100% !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
+}
+
+.picdoc-body-section .editor-fix-toolbar {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 7px !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 8px !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 8px !important;
+  background: #f8fafc !important;
+}
+
+.picdoc-body-section .toolbar-button {
+  min-height: 30px !important;
+  padding: 0 10px !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  background: transparent !important;
+  color: #475569 !important;
+}
+
+.picdoc-body-section .toolbar-button:hover {
+  background: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.picdoc-body-shell {
+  position: relative !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  border: 1px solid #dbe3ee !important;
+  border-radius: 12px !important;
+  background: #ffffff !important;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.06) !important;
+  overflow: visible !important;
+  contain: inline-size !important;
+  --body-pad-left: 24px;
+  --body-pad-right: 24px;
+}
+
+.picdoc-body-shell::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -48px;
+  width: 48px;
+  pointer-events: auto;
+}
+
+.editor-meta-table {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  margin: 14px 14px 0;
+  border: 1px solid #dbe5f0;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fbfdff, #ffffff);
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+  overflow: hidden;
+}
+
+.editor-meta-row {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+  min-width: 0;
+  border-bottom: 1px solid #e6edf5;
+}
+
+.editor-meta-row:last-child {
+  border-bottom: 0;
+}
+
+.editor-meta-label {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 16px 14px;
+  border-right: 1px solid #e6edf5;
+  background: rgba(248, 250, 252, 0.72);
+  color: #475569;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  white-space: nowrap;
+}
+
+.editor-meta-row input,
+.editor-meta-row textarea {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: #0f172a;
+  outline: none;
+  padding: 14px 18px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.editor-meta-row textarea,
+.editor-meta-summary-row textarea {
+  min-height: 74px !important;
+  height: auto;
+  overflow: hidden !important;
+  resize: none !important;
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+.editor-meta-row input:focus,
+.editor-meta-row textarea:focus {
+  background: rgba(239, 246, 255, 0.42);
+}
+
+.picdoc-body-content {
+  position: relative !important;
+  z-index: 1 !important;
+  min-height: 96px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-x: hidden !important;
+  contain: inline-size !important;
+  padding: 18px var(--body-pad-right) 18px var(--body-pad-left) !important;
+  background: transparent !important;
+  color: #0f172a !important;
+  font-family: 'Microsoft YaHei', 'PingFang SC', 'Noto Sans SC', sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.9 !important;
+  outline: none !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  white-space: break-spaces !important;
+}
+
+.picdoc-body-content,
+.picdoc-body-content.ProseMirror,
+.picdoc-body-content > *,
+.picdoc-body-content p,
+.picdoc-body-content div,
+.picdoc-body-content li,
+.picdoc-body-content blockquote,
+.picdoc-body-content pre,
+.picdoc-body-content code {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  overflow-wrap: anywhere !important;
+  word-break: break-word !important;
+  white-space: break-spaces !important;
+}
+
+.picdoc-body-content p,
+.picdoc-body-content li,
+.picdoc-body-content blockquote,
+.picdoc-body-content pre {
+  min-height: 1.9em !important;
+  margin: 0 0 0.85em !important;
+}
+
+.picdoc-body-shell .editor-inline-trigger {
+  position: absolute !important;
+  left: -40px !important;
+  width: 28px !important;
+  height: 28px !important;
+  z-index: 30 !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 1px solid #bfdbfe !important;
+  border-radius: 999px !important;
+  background: #eff6ff !important;
+  color: #2563eb !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.12) !important;
+}
+
+.picdoc-body-shell .editor-inline-trigger:hover,
+.picdoc-body-shell .editor-inline-trigger.is-active {
+  background: #2563eb !important;
+  color: #ffffff !important;
+}
+
+.picdoc-body-shell .editor-inline-outline {
+  position: absolute !important;
+  left: calc(var(--body-pad-left) - 8px) !important;
+  right: var(--body-pad-right) !important;
+  z-index: 20 !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  background: rgba(37, 99, 235, 0.08) !important;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.12) !important;
+  pointer-events: none !important;
+}
+
+.picdoc-body-shell .editor-inline-outline.is-selection {
+  border-radius: 6px !important;
+  background: rgba(37, 99, 235, 0.12) !important;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.18) !important;
+}
+
+.picdoc-body-shell .editor-inline-chatbox {
+  position: absolute !important;
+  right: 18px !important;
+  width: min(560px, calc(100% - 96px)) !important;
+  min-height: 420px !important;
+  max-height: min(680px, calc(100vh - 120px)) !important;
+  display: grid !important;
+  grid-template-rows: auto auto minmax(160px, 1fr) auto auto !important;
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
+  border-radius: 10px !important;
+  background: #ffffff !important;
+  box-shadow: 0 26px 80px rgba(15, 23, 42, 0.2) !important;
+  overflow: hidden !important;
+  z-index: 40 !important;
+}
+
+.picdoc-body-shell .editor-inline-chatbox .editor-inline-chatlog {
+  min-height: 0 !important;
+  overflow-y: auto !important;
+}
+
+.editor-inline-recognized {
+  margin: 0 16px 12px !important;
+  padding: 10px 12px !important;
+  border: 1px solid #dbeafe !important;
+  border-radius: 8px !important;
+  background: #eff6ff !important;
+  color: #1e3a8a !important;
+}
+
+.editor-inline-recognized-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  margin-bottom: 6px !important;
+}
+
+.editor-inline-recognized-head span {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.editor-inline-recognized p {
+  max-height: 44px !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  color: #334155 !important;
+  font-size: 13px !important;
+  line-height: 1.65 !important;
+  white-space: pre-wrap !important;
+}
+
+.editor-inline-recognized.is-expanded p {
+  max-height: 220px !important;
+  overflow-y: auto !important;
+}
+
+.editor-inline-write-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.editor-inline-write-actions .text-button {
+  padding: 4px 8px;
+  border: 1px solid #dbe3ee;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #2563eb;
+  font-size: 12px;
+}
+
+.editor-inline-write-actions .text-button:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+@media (max-width: 760px) {
+  .picdoc-editor-form {
+    grid-template-columns: 1fr !important;
+  }
+
+  .picdoc-body-content {
+    padding-left: 54px !important;
+    padding-right: 18px !important;
+  }
+
+  .picdoc-body-shell .editor-inline-trigger {
+    left: 12px !important;
+  }
+
+  .picdoc-body-shell .editor-inline-outline {
+    left: 54px !important;
+    right: 18px !important;
+  }
+}
